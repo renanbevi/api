@@ -11,7 +11,7 @@ public class SpringDocConfiguration {
 
     @Bean
     public OpenAPI customOpenAPI() {
-git        return new OpenAPI()
+       return new OpenAPI()
                 .components(new Components()
                         .addSecuritySchemes("bearer-key",
                                 new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")));
